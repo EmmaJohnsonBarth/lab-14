@@ -1,7 +1,60 @@
+
 #chart {
     background-color: rgb(250, 245, 249);
     max-width: 80em;
     max-height: 50em;
     margin: 0 auto;
     border: 2px solid rgb(126, 28, 57);
+}
+
+/* TODO: Make it awesome */
+
+img {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #FFDDDD;
+}
+
+section {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #FF7171;
+    font-family: Poppins;
+    background-color: #FFDDDD;
+    margin-left: 275px;
+    margin-right: 275px;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+li {
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    color: #FF7171;
+    font-family: Poppins;
+    background-color: #FFDDDD;
+    padding: 10px;
+    margin-left: 575px;
+    margin-right: 575px;
+    border-radius: 50px;
+}
+
+body {
+    background-color: #FFF1F1;
 }

@@ -11,6 +11,7 @@ let canvasElem = document.getElementById('chart')
  *
  */
 
+
 let newState = new AppState();
 
 newState.loadItems();
