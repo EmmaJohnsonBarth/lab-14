@@ -1,3 +1,12 @@
+
+#chart {
+    background-color: rgb(250, 245, 249);
+    max-width: 80em;
+    max-height: 50em;
+    margin: 0 auto;
+    border: 2px solid rgb(126, 28, 57);
+}
+
 /* TODO: Make it awesome */
 
 img {
@@ -49,6 +58,3 @@ footer {
 body {
     background-color: #FFF1F1;
 }
-
-
-
