@@ -20,17 +20,18 @@ AppState.prototype.instantiateProducts = function () {
 
 AppState.prototype.saveToLocalStorage = function () {
   const productsJson = JSON.stringify(this.allProducts);
-  console.log(productsJson);
+  // console.log(productsJson);
   localStorage.setItem('products', productsJson);
-  console.log('information has been stored');
+  // console.log('information has been stored');
 }
 
 AppState.prototype.loadItems = function () {
   const productsJson = localStorage.getItem('products');
   if (productsJson) {
-  this.allProducts = JSON.parse(productsJson);
-   }
-  this.instantiateProducts();
+    this.allProducts = JSON.parse(productsJson);
+  } else {
+    this.instantiateProducts();
+  }
 }
 
 
