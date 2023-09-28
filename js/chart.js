@@ -38,25 +38,25 @@ function renderChart() {
     let objectValues = Object.values(dataObj);
     console.log(objectValues)
 
-    const ctx = document.getElementById('chart-section');
+    // const ctx = document.getElementById('chart-section');
 
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: objectKeys,
-        datasets: [{
-          label: '# of Votes',
-          data: objectValues,
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
+    new Chart(canvasElem, {
+        type: 'bar',
+        data: {
+            labels: objectKeys,
+            datasets: [{
+                label: '# of Votes',
+                data: objectValues,
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
         }
-      }
     });
 }
 
