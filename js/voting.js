@@ -1,7 +1,7 @@
 'use strict';
 
 
-let votingRounds = 25;
+let votingRounds = 5;
 let productIndexArray = [];
 
 let imgElements = document.querySelectorAll('img');
@@ -9,6 +9,7 @@ let imgContainer = document.querySelector('section');
 
 
 let state = new AppState();
+
 state.loadItems();
 
 
@@ -53,6 +54,7 @@ function handleImageClick(event) {
     if (votingRounds === 0) {
       imgContainer.removeEventListener('click', handleImageClick);
       state.saveToLocalStorage();
+      console.log('handleImageClick')
     }
   }
 }
