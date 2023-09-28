@@ -29,8 +29,9 @@ AppState.prototype.loadItems = function () {
   const productsJson = localStorage.getItem('products');
   if (productsJson) {
   this.allProducts = JSON.parse(productsJson);
-   }
+   } else {
   this.instantiateProducts();
+}
 }
 
 
